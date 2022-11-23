@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Util {
-    public Connection dbConnection() {
+    public static Connection dbConnection() {
         // db mySQL get connection
         try {
             String userName = "Kolokolov";

@@ -16,7 +16,6 @@ public class UserServiceTest {
     private final String testLastName = "Rossi";
     private final byte testAge = 36;
 
-
     @Test
     public void dropUsersTable() {
         try {
@@ -33,7 +32,7 @@ public class UserServiceTest {
             userService.dropUsersTable();
             userService.createUsersTable();
         } catch (Exception e) {
-            Assert.fail("Error creating users table. Exception thrown.\n" + e.getMessage());
+            Assert.fail("Error creating users table. Exception thrown.\n" + e);
         }
     }
 

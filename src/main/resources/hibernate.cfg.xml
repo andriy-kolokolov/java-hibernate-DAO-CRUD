@@ -9,8 +9,12 @@
         <property name="connection.username">Kolokolov</property>
         <property name="connection.password">626871</property>
         <property name="show_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
 
-        <mapping class="org.firstproject.model.entity.User"/>
+
+        <mapping class="org.firstproject.model.hibernate.User"/>
+
+
 
 
         <!-- DB schema will be updated if needed -->

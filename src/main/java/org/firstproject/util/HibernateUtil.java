@@ -8,6 +8,7 @@ import java.io.File;
 
 // hibernate initialization
 public class HibernateUtil {
+
     private static final SessionFactory sessionFactory = buildSessionFactory();
 
     private static SessionFactory buildSessionFactory() {
@@ -17,7 +18,7 @@ public class HibernateUtil {
                     .configure(new File("src\\main\\resources\\hibernate.cfg.xml"))
                     .buildSessionFactory();
         } catch (HibernateException e) {
-            System.err.println("SessionFactory creation failed. " + e);
+            System.err.println("SessionFactory creation failed. ");
             throw new ExceptionInInitializerError(e);
         }
     }
@@ -34,4 +35,6 @@ public class HibernateUtil {
         // Close caches and connection pools
         getSessionFactory().close();
     }
+
+
 }

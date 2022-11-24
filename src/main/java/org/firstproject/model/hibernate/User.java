@@ -1,10 +1,11 @@
-package org.firstproject.model.entity;
+package org.firstproject.model.hibernate;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.firstproject.model.UserModel;
 
 @Entity
 @Table(name = "users", schema = "usersdb")
@@ -12,7 +13,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class User extends UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

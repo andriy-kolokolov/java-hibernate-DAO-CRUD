@@ -1,17 +1,13 @@
-
-import org.firstproject.model.User;
-import org.firstproject.service.UserService;
-import org.firstproject.service.UserServiceImpl;
+import org.firstproject.dao.UserDaoJdbcImpl;
+import org.firstproject.model.jdbc.User;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
 
-public class UserServiceTest {
-    // JDBC TEST
-    private final UserService userService = new UserServiceImpl();
-    // HIBERNATE TEST
-    // private final UserDaoHibernateImpl userService = new UserDaoHibernateImpl();
+public class UserDaoJdbcTest {
+    // JDBC TESTS
+    private final UserDaoJdbcImpl userService = new UserDaoJdbcImpl();
     private final String testName = "Marco";
     private final String testLastName = "Rossi";
     private final byte testAge = 36;
@@ -97,7 +93,7 @@ public class UserServiceTest {
                 Assert.fail("Method cleanUsersTable is incorrectly implemented");
             }
         } catch (Exception e) {
-            Assert.fail( "Error cleaning users table. Exception thrown\n" + e);
+            Assert.fail("Error cleaning users table. Exception thrown\n" + e);
         }
     }
 

@@ -1,6 +1,6 @@
 package org.firstproject;
 
-import org.firstproject.model.entity.User;
+import org.firstproject.model.hibernate.User;
 import org.firstproject.util.HibernateUtil;
 import org.hibernate.Session;
 

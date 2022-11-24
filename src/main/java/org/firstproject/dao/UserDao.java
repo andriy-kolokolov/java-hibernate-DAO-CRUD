@@ -1,6 +1,6 @@
 package org.firstproject.dao;
 
-import org.firstproject.model.User;
+import org.firstproject.model.UserModel;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public interface UserDao {
 
     void removeUserById(long id);
 
-    List<User> getAllUsers();
+    List<? extends UserModel> getAllUsers();
 
     void cleanUsersTable();
 }

@@ -9,7 +9,7 @@ public class Util {
         // db mySQL get connection
         try {
             String userName = ""; // connection username
-            String password = "626871"; // connection pass
+            String password = ""; // connection pass
             String connectionURL = "jdbc:mysql://localhost:3306/usersdb";
             return DriverManager.getConnection(connectionURL, userName, password);
         } catch (SQLException e) {

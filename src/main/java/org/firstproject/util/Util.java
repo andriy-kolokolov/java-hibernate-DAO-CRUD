@@ -8,8 +8,8 @@ public class Util {
     public static Connection dbConnection() {
         // db mySQL get connection
         try {
-            String userName = "Kolokolov";
-            String password = "626871";
+            String userName = ""; // connection username
+            String password = "626871"; // connection pass
             String connectionURL = "jdbc:mysql://localhost:3306/usersdb";
             return DriverManager.getConnection(connectionURL, userName, password);
         } catch (SQLException e) {

@@ -1,4 +1,4 @@
-import org.firstproject.dao.UserDaoJdbcImpl;
+import org.firstproject.dao.JdbcUserDao;
 import org.firstproject.model.jdbc.User;
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import java.util.List;
 
 public class UserDaoJdbcTest {
     // JDBC TESTS
-    private final UserDaoJdbcImpl userService = new UserDaoJdbcImpl();
+    private final JdbcUserDao userService = new JdbcUserDao();
     private final String testName = "Marco";
     private final String testLastName = "Rossi";
     private final byte testAge = 36;

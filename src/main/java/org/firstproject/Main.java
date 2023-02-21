@@ -31,7 +31,7 @@ public class Main {
         session.close();
 
         // close Session Factory
-        HibernateUtil.close();
+        HibernateUtil.shutdown();
 
     }
 }
